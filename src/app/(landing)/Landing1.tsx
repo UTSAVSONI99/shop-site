@@ -144,32 +144,38 @@ const features2 = [
   {
     title: "🛍️ Display Products & Services Professionally",
     desc: "Organize your offerings with clean visuals, detailed descriptions, and powerful categorization.",
-    image: "/images/professional-presentation.png", // Example image path
+    // Example: A clean, organized product catalog with clear images and descriptions.
+    image: "/images/professional-presentation.png",
   },
   {
     title: "💸 Show Prices and Offers Clearly",
     desc: "Make decision-making easier by showing pricing, discounts, and offers transparently.",
-    image: "/images/prices-and-offers.png", // Example image path
+    // Example: A product page showing price tags, discounts, and special offers.
+    image: "/images/prices-and-offers.png",
   },
   {
     title: "🧭 Easy for Clients to Browse & Select",
     desc: "User-friendly navigation ensures your clients find exactly what they’re looking for — fast.",
-    image: "/images/easy-browsing.png", // Example image path
+    image: "/images/easy-browsing.png",
+    // Example: A screenshot of a website or app with a clear navigation menu and search bar.
   },
   {
     title: "📩 Instant Enquiry & Order Options",
     desc: "Allow customers to place enquiries or initiate orders directly from your catalog.",
-    image: "/images/instant-enquiry.png", // Example image path
+    // Example: A contact form or a "Buy Now" button on a product page.
+    image: "/images/instant-enquiry.png",
   },
   {
     title: "🔗 Share Instantly",
     desc: "Distribute your catalog via WhatsApp, Email, or embed it on your website.",
-    image: "/images/share-instantly.png", // Example image path
+    // Example: Icons for WhatsApp, Email, and a website embed preview.
+    image: "/images/share-instantly.png",
   },
   {
     title: "📊 Gain Insights with Analytics",
     desc: "Track customer interactions and preferences to optimize your offerings and improve engagement.",
-    image: "/images/analytics-insights.png", // Example image path
+    // Example: A dashboard showing graphs, charts, and user interaction data.
+    image: "/images/analytics-insights.png",
   },
 ];
 const FeaturesSection2 = () => {
