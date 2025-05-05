@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 const HeroSection = () => (
-  <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6 text-center">
+  <section className="bg-[#1e83c3] text-white py-20 px-6 text-center">
     <div className="max-w-4xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold mb-4">
         Take Your Business to the Next Level
@@ -12,16 +13,20 @@ const HeroSection = () => (
         Showcase your complete range of products and services — with rates,
         descriptions, and images — directly to your clients, anytime, anywhere!
       </p>
+      <p className="text-lg font-semibold mb-8">
+        <span className="text-yellow-300">Absolutely Free!</span> Get started
+        today and list up to 100 products for free — forever. No hidden charges,
+        no strings attached.
+      </p>
       <div className="flex justify-center gap-4">
         <Button size="lg">Request Demo</Button>
-        <Button variant="outline" size="lg">
+        <Button variant="outline" size="lg" className="text-black">
           Contact Us
         </Button>
       </div>
     </div>
   </section>
 );
-
 const WhyGoDigital = () => (
   <section className="py-16 px-6 max-w-5xl mx-auto text-center">
     <h2 className="text-3xl font-bold mb-4">🚀 Why Go Digital?</h2>
@@ -36,31 +41,83 @@ const WhyGoDigital = () => (
     </ul>
   </section>
 );
-
+const WhyGoDigital2 = () => (
+  <section className="py-16 px-6 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div className="max-w-5xl mx-auto text-center">
+      <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
+        🚀 Why Go Digital?
+      </h2>
+      <p className="mb-8 text-lg text-gray-600">
+        In today’s fast-paced world, businesses need to be accessible,
+        informative, and fast. Going digital is the key to staying ahead.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex items-start space-x-4">
+          <div className="text-blue-600 text-2xl">📦</div>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">
+              Professional Presentation
+            </h3>
+            <p className="text-gray-600">
+              Present your full product or service lineup with style and
+              professionalism.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="text-green-600 text-2xl">💰</div>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">
+              Cost Efficiency
+            </h3>
+            <p className="text-gray-600">
+              Save on printing costs and update your content instantly without
+              hassle.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start space-x-4">
+          <div className="text-purple-600 text-2xl">📱</div>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">
+              Universal Accessibility
+            </h3>
+            <p className="text-gray-600">
+              Reach clients on any device, anytime, anywhere, with ease.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+const features = [
+  {
+    title: "🛍️ Display Products & Services Professionally",
+    desc: "Organize your offerings with clean visuals, detailed descriptions, and powerful categorization.",
+  },
+  {
+    title: "💸 Show Prices and Offers Clearly",
+    desc: "Make decision-making easier by showing pricing, discounts, and offers transparently.",
+  },
+  {
+    title: "🧭 Easy for Clients to Browse & Select",
+    desc: "User-friendly navigation ensures your clients find exactly what they’re looking for — fast.",
+  },
+  {
+    title: "📩 Instant Enquiry & Order Options",
+    desc: "Allow customers to place enquiries or initiate orders directly from your catalog.",
+  },
+  {
+    title: "🔗 Share Instantly",
+    desc: "Distribute your catalog via WhatsApp, Email, or embed it on your website.",
+  },
+  {
+    title: "📊 Gain Insights with Analytics",
+    desc: "Track customer interactions and preferences to optimize your offerings and improve engagement.",
+  },
+];
 const FeaturesSection = () => {
-  const features = [
-    {
-      title: "🛍️ Display Products & Services Professionally",
-      desc: "Organize your offerings with clean visuals, detailed descriptions, and powerful categorization.",
-    },
-    {
-      title: "💸 Show Prices and Offers Clearly",
-      desc: "Make decision-making easier by showing pricing, discounts, and offers transparently.",
-    },
-    {
-      title: "🧭 Easy for Clients to Browse & Select",
-      desc: "User-friendly navigation ensures your clients find exactly what they’re looking for — fast.",
-    },
-    {
-      title: "📩 Instant Enquiry & Order Options",
-      desc: "Allow customers to place enquiries or initiate orders directly from your catalog.",
-    },
-    {
-      title: "🔗 Share Instantly",
-      desc: "Distribute your catalog via WhatsApp, Email, or embed it on your website.",
-    },
-  ];
-
   return (
     <section className="bg-gray-50 py-16 px-6">
       <div className="max-w-6xl mx-auto text-center">
@@ -83,7 +140,66 @@ const FeaturesSection = () => {
     </section>
   );
 };
-
+const features2 = [
+  {
+    title: "🛍️ Display Products & Services Professionally",
+    desc: "Organize your offerings with clean visuals, detailed descriptions, and powerful categorization.",
+    image: "/images/professional-presentation.png", // Example image path
+  },
+  {
+    title: "💸 Show Prices and Offers Clearly",
+    desc: "Make decision-making easier by showing pricing, discounts, and offers transparently.",
+    image: "/images/prices-and-offers.png", // Example image path
+  },
+  {
+    title: "🧭 Easy for Clients to Browse & Select",
+    desc: "User-friendly navigation ensures your clients find exactly what they’re looking for — fast.",
+    image: "/images/easy-browsing.png", // Example image path
+  },
+  {
+    title: "📩 Instant Enquiry & Order Options",
+    desc: "Allow customers to place enquiries or initiate orders directly from your catalog.",
+    image: "/images/instant-enquiry.png", // Example image path
+  },
+  {
+    title: "🔗 Share Instantly",
+    desc: "Distribute your catalog via WhatsApp, Email, or embed it on your website.",
+    image: "/images/share-instantly.png", // Example image path
+  },
+  {
+    title: "📊 Gain Insights with Analytics",
+    desc: "Track customer interactions and preferences to optimize your offerings and improve engagement.",
+    image: "/images/analytics-insights.png", // Example image path
+  },
+];
+const FeaturesSection2 = () => {
+  return (
+    <section className="bg-gray-50 py-16 px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-12">✅ Key Features</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+          {features2.map((feature, idx) => (
+            <Card key={idx}>
+              <CardHeader>
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="w-full h-40 object-cover rounded-t-lg"
+                />
+                <CardTitle className="text-lg font-semibold mt-4">
+                  {feature.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-gray-700">
+                {feature.desc}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 const HowItWorks = () => (
   <section className="py-16 px-6 max-w-5xl mx-auto">
     <h2 className="text-3xl font-bold text-center mb-8">🛠️ How It Works</h2>
@@ -146,7 +262,7 @@ const Testimonials = () => (
 );
 
 const CTASection = () => (
-  <section className="bg-indigo-600 text-white py-20 px-6 text-center">
+  <section className="bg-[#1e83c3] text-white py-20 px-6 text-center">
     <h2 className="text-3xl font-bold mb-4">📢 Get Started Today!</h2>
     <p className="text-lg mb-8">
       Start creating your Digital Catalog now and give your business the digital
@@ -179,9 +295,9 @@ export const Landing = () => {
   return (
     <div className="bg-white text-gray-900 font-sans">
       <HeroSection />
-      <WhyGoDigital />
+      <WhyGoDigital2 />
       <Separator className="my-8" />
-      <FeaturesSection />
+      <FeaturesSection2 />
       <HowItWorks />
       <WhoIsItFor />
       <Testimonials />
