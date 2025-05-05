@@ -1,4 +1,4 @@
-import Landing from "../components/Landing";
+import Landing from "./(landing)/Landing";
 
 export default function Home() {
   return (

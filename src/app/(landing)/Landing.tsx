@@ -11,6 +11,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { CheckIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -21,26 +22,27 @@ const navigation = [
 const features = [
   {
     name: "Push to deploy",
-    description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+    description: "Display Products & Services Professionally.",
     icon: CloudArrowUpIcon,
   },
   {
     name: "SSL certificates",
-    description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+    description: "Show Prices and Offers Clearly.",
     icon: LockClosedIcon,
   },
   {
     name: "Simple queues",
-    description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+    description: " Easy for Clients to Browse & Select.",
     icon: ArrowPathIcon,
   },
   {
     name: "Advanced security",
-    description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+    description: " Instant Enquiry & Order Options.",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Advanced security",
+    description: " Share on WhatsApp, Email, or Website!.",
     icon: FingerPrintIcon,
   },
 ];
@@ -125,7 +127,7 @@ const footerNavigation = {
   ],
 };
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -141,14 +143,24 @@ export default function Example() {
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link
+              className="text-3xl font-semibold leading-none flex gap-2 items-center justify-center"
+              href="/"
+            >
+              {/* <Link className="-m-1.5 p-1.5 "> */}
               <span className="sr-only">Your Company</span>
               <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
+                src="/logo/logo-rounded.png"
+                className="drop-shadow"
+                alt="logo"
+                height="48"
+                width="48"
               />
-            </a>
+              <span className="drop-shadow text-slate-800 font-light ">
+                Our-Shop.site
+              </span>
+              {/* </Link> */}
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
