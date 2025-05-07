@@ -55,22 +55,16 @@ function CallToAction() {
         unoptimized
       /> */}
       <Container className="relative">
-        <div className="mx-auto max-w-lg text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Get started today
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to take control of your books. Buy our software so you can
-            feel like you’re doing something productive.
+        <section className="bg-[#1e83c3] text-white  px-6 text-center">
+          <h2 className="text-3xl font-bold mb-4">📢 Get Started Today!</h2>
+          <p className="text-lg mb-8">
+            Start creating your Digital Catalog now and give your business the
+            digital edge it needs.
           </p>
-          <Button
-            className="mt-10 bg-white text-slate-900"
-            asChild
-            variant={"secondary"}
-          >
-            <Link href={"/sign-up"}>Get 1 months free</Link>
+          <Button size="lg" variant="secondary">
+            Get Your Free Demo
           </Button>
-        </div>
+        </section>
       </Container>
     </section>
   );

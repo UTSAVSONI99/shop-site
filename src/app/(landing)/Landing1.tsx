@@ -18,6 +18,7 @@ const HeroSection = () => (
         today and list up to 100 products for free — forever. No hidden charges,
         no strings attached.
       </p>
+
       <div className="flex justify-center gap-4">
         <Button size="lg">Request Demo</Button>
         <Button variant="outline" size="lg" className="text-black">
