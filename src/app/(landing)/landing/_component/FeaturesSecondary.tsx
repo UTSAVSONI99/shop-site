@@ -1,4 +1,12 @@
-import { LayoutGrid, Tag, Handshake, MailOpen, Share2 } from "lucide-react";
+import {
+  LayoutGrid,
+  Tag,
+  Handshake,
+  MailOpen,
+  Share2,
+  Phone,
+  Smartphone,
+} from "lucide-react";
 
 type Feature = {
   name: string;
@@ -36,6 +44,12 @@ const features: Feature[] = [
     description:
       "Share your offerings via WhatsApp, email, or embed them on your website for broader reach.",
     icon: Share2,
+  },
+  {
+    name: "Mobile Responsive Design",
+    description:
+      "Your website looks and works perfectly on all devices — from desktops to smartphones — ensuring a smooth experience everywhere.",
+    icon: Smartphone,
   },
 ];
 

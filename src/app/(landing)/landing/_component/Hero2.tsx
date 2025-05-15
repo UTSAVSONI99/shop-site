@@ -42,9 +42,11 @@ export default function HeroSection() {
           {/* Get ready to create, customize, and sell like never before! */}
         </p>
         <p className="text-lg  mb-8 mt-6 text-slate-700">
-          <span className="text-[#1e83c3] font-semibold">Absolutely Free!</span>{" "}
+          <span className="text-[#1e83c3] font-semibold">
+            🎉 Absolutely Free!
+          </span>{" "}
           Get started today and list up to 100 products for free — forever. No
-          hidden charges, no strings attached.
+          hidden charges, no strings attached. 🎉
         </p>
         <div className="mt-10 flex justify-center gap-x-6">
           <Button asChild>
